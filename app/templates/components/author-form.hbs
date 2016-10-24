@@ -1,0 +1,17 @@
+<h2>Add new Author</h2>
+
+<form {{action 'submit' on='submit'}}>
+  <div class="form-group {{if errors.title 'has-error'}}">
+    <label for="">Name</label>
+    {{input class="form-control" value=author.name focus-out="validateName"}}
+    {{#each errors.name as |error|}}
+      <span class="help-block"> {{error.message}}</span>
+    {{/each}}
+    <!-- {{#each author.books as |book|}}
+      <label for="">Book Title</label>
+      {{input class="form-control" value=book.title name="book[title]"}}
+    {{/each}} -->
+  </div>
+  <button class="btn btn-primary" type="submit">{{buttonLabel}}</button>
+  {{#link-to 'authors.author' author class="btn btn-danger"}}Cancel{{/link-to}}
+</form>

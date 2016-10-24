@@ -1,0 +1,12 @@
+<h1>{{author.name}}</h1>
+<div>
+    {{#each author.books as |book|}}
+      <p>Title: {{book.title}}</p>
+      <p>Publisher: {{book.publisher.name}}</p>
+    {{/each}}
+</div>
+
+<div>
+  {{#link-to 'authors.edit' author class="btn btn-success"}}Edit Button {{/link-to}}
+  <a href="" class="btn btn-danger" {{action 'deleteAuthor'}}> Delete Author </a>
+</div>

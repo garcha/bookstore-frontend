@@ -1,0 +1,7 @@
+<div class="list-group">
+  {{#each authors as |author|}}
+    {{#unless author.isNew}}
+      {{#link-to 'authors.author' author class="list-group-item"}}{{author.name}}{{/link-to}}
+    {{/unless}}
+  {{/each}}
+</div>

@@ -1,0 +1,5 @@
+{{#each model as |book|}}
+  <h4>{{book.title}}</h4>
+  <p>Author: {{book.author.name}}<br>
+  published by: {{book.publisher.name}}</p>
+{{/each}}
