@@ -1,4 +1,5 @@
-define('bookstore-frontend/router', ['exports', 'ember', 'bookstore-frontend/config/environment'], function (exports, _ember, _bookstoreFrontendConfigEnvironment) {
+define('bookstore-frontend/router', ['exports', 'ember'], function (exports, _ember) {
+  //import config from './config/environment';
 
   var Router = _ember['default'].Router.extend({
     //location: config.locationType,

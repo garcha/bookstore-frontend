@@ -110,7 +110,7 @@ define("bookstore-frontend/about/template", ["exports"], function (exports) {
 });
 define('bookstore-frontend/adapters/application', ['exports', 'ember-data', 'ember-simple-auth/mixins/data-adapter-mixin'], function (exports, _emberData, _emberSimpleAuthMixinsDataAdapterMixin) {
   exports['default'] = _emberData['default'].JSONAPIAdapter.extend(_emberSimpleAuthMixinsDataAdapterMixin['default'], {
-    host: 'http://localhost:3000',
+    host: 'https://bookend-api648.herokuapp.com/',
     authorizer: 'authorizer:token'
   });
 });
@@ -1829,7 +1829,8 @@ define("bookstore-frontend/publishers/template", ["exports"], function (exports)
 define('bookstore-frontend/resolver', ['exports', 'ember-resolver'], function (exports, _emberResolver) {
   exports['default'] = _emberResolver['default'];
 });
-define('bookstore-frontend/router', ['exports', 'ember', 'bookstore-frontend/config/environment'], function (exports, _ember, _bookstoreFrontendConfigEnvironment) {
+define('bookstore-frontend/router', ['exports', 'ember'], function (exports, _ember) {
+  //import config from './config/environment';
 
   var Router = _ember['default'].Router.extend({
     //location: config.locationType,

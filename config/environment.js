@@ -25,7 +25,7 @@ module.exports = function(environment) {
 
   ENV['ember-simple-auth-token'] = {
     identificationField: 'email',
-    serverTokenEndpoint: 'http://api.jazz.com/auth_user',
+    serverTokenEndpoint: 'https://bookend-api648.herokuapp.com/auth_user',
     authorizer: 'authorizer:token'
   };
 
