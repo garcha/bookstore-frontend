@@ -1,12 +1,13 @@
 import Ember from 'ember';
 import DS from 'ember-data';
 import serverErrorsParser from '../../utils/server-errors-parser';
+import AuthenticatedRouteMixin from 'ember-simple-auth/mixins/authenticated-route-mixin';
 
-export default Ember.Route.extend({
+export default Ember.Route.extend(AuthenticatedRouteMixin,{
   model: function() {
     return this.store.createRecord('author');
   },
-  
+
   setupController: function(controller, model) {
     controller.set('author', model);
     controller.set('errors', DS.Errors.create());
@@ -19,7 +20,7 @@ export default Ember.Route.extend({
   //     }).save();
   //   }
   // }
-  
+
   actions: {
     createAuthor: function(author){
       //console.log(author);

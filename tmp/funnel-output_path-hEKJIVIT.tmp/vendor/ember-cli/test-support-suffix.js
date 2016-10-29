@@ -1,0 +1,1 @@
+/Users/jazz/projects/ember/bookstore_rails_ember/bookstore-front-end/tmp/funnel-input_base_path-br32s1Ss.tmp/0//test-support-suffix.js

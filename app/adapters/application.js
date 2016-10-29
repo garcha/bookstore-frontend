@@ -5,7 +5,3 @@ export default DS.JSONAPIAdapter.extend(DataAdapterMixin,{
   host: 'http://localhost:3000',
   authorizer: 'authorizer:token'
 });
-
-// export default DS.RESTAdapter.extend({
-//     host: 'http://jazz.caplinked.com'
-// });

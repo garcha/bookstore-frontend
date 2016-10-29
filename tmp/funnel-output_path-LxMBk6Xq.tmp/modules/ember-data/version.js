@@ -1,0 +1,1 @@
+/Users/jazz/projects/ember/bookstore_rails_ember/bookstore-front-end/tmp/creator-output_path-KNy1YbWg.tmp/version.js
