@@ -67360,9 +67360,9 @@ function whitelist(str, chars) {
   return str.replace(new RegExp('[^' + chars + ']+', 'g'), '');
 }
 module.exports = exports['default'];
-},{"./util/assertString":"/Users/jazz/projects/ember/bookstore_rails_ember/bookstore-front-end/node_modules/validator/lib/util/assertString.js"}],"/Users/jazz/projects/ember/bookstore_rails_ember/bookstore-front-end/tmp/core_object-input_staging-I3Bqg1ZM.tmp/browserify_stubs.js":[function(require,module,exports){
+},{"./util/assertString":"/Users/jazz/projects/ember/bookstore_rails_ember/bookstore-front-end/node_modules/validator/lib/util/assertString.js"}],"/Users/jazz/projects/ember/bookstore_rails_ember/bookstore-front-end/tmp/core_object-input_staging-Rt5hDgzl.tmp/browserify_stubs.js":[function(require,module,exports){
 define('npm:validator', function(){ return { 'default': require('validator')};})
-},{"validator":"/Users/jazz/projects/ember/bookstore_rails_ember/bookstore-front-end/node_modules/validator/index.js"}]},{},["/Users/jazz/projects/ember/bookstore_rails_ember/bookstore-front-end/tmp/core_object-input_staging-I3Bqg1ZM.tmp/browserify_stubs.js"]);
+},{"validator":"/Users/jazz/projects/ember/bookstore_rails_ember/bookstore-front-end/node_modules/validator/index.js"}]},{},["/Users/jazz/projects/ember/bookstore_rails_ember/bookstore-front-end/tmp/core_object-input_staging-Rt5hDgzl.tmp/browserify_stubs.js"]);
 
 ;/* globals define */
 define('ember/load-initializers', ['exports', 'ember-load-initializers', 'ember'], function(exports, loadInitializers, Ember) {
